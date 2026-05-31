@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <script>
-      window.location.replace(
-        '/ReactjsSearchMovies/' + window.location.pathname.slice(1)
-      );
+      var path = window.location.pathname.slice('/ReactjsSearchMovies/'.length);
+      window.location.replace('/ReactjsSearchMovies/' + '?p=' + path);
     </script>
   </head>
 </html>
